@@ -1,0 +1,44 @@
+{
+  "original_firmware": [
+    {
+      "source_name": "alarm.ino",
+      "source_sha256": "a396a02df196adb5685977777e73bfdea32b1cf38cee8c4c6938f2cf2feadf39",
+      "published_path": "archive/firmware_2025/alarm/alarm.ino",
+      "treatment": "Removed embedded connection credentials and explanatory boilerplate where present; historical logic retained."
+    },
+    {
+      "source_name": "occupancy.ino",
+      "source_sha256": "1f4b64fdb66a19f8cffb933ed6eacbcf097950d61fb8736d03e215051ef7c974",
+      "published_path": "archive/firmware_2025/occupancy/occupancy.ino",
+      "treatment": "Removed embedded connection credentials and explanatory boilerplate where present; historical logic retained."
+    },
+    {
+      "source_name": "wristband.ino",
+      "source_sha256": "b1ea5f37160e50a6b402d7ce46b766f12cbe3fe61b0ee4dbc816f6e73b86cdd2",
+      "published_path": "archive/firmware_2025/wristband_rf/wristband_rf.ino",
+      "treatment": "Removed embedded connection credentials and explanatory boilerplate where present; historical logic retained."
+    },
+    {
+      "source_name": "receiver.ino",
+      "source_sha256": "dd4d3e11a2e72266465b5b06a39243a68d776199d782ba5cd215792d4c30f904",
+      "published_path": "archive/firmware_2025/receiver_virtualwire/receiver_virtualwire.ino",
+      "treatment": "Removed embedded connection credentials and explanatory boilerplate where present; historical logic retained."
+    },
+    {
+      "source_name": "wristband_gps.ino",
+      "source_sha256": "f195fdbd246cca0262771c1a7c5302f0ae9d8c75b4e0e1619189b4cd2240d9cd",
+      "published_path": "archive/firmware_2025/wristband_gps/wristband_gps.ino",
+      "treatment": "Removed embedded connection credentials and explanatory boilerplate where present; historical logic retained."
+    },
+    {
+      "source_name": "earthquake.ino",
+      "source_sha256": "e72da1427b01012be74baa4b29ed00b8b83acf25aea264f1bd5e95f7631e8d08",
+      "published_path": "archive/firmware_2025/wristband_temperature_gps/wristband_temperature_gps.ino",
+      "treatment": "Removed embedded connection credentials and explanatory boilerplate where present; historical logic retained."
+    }
+  ],
+  "dataset_sha256": "9f5a062c22ac23cbe62a76f63a30cb0f33dce75664702434a586a2ca456b9dd5",
+  "stl_sha256": "961fa0546f935771c13d0ea4b8cc2381651550b8f3e4e14729787d4da103ca4b",
+  "award_source": "TÜBİTAK BİDEB/ARBİS record dated 12 February 2026; 2025/1 2204-B; national-final Encouragement Award; administrative original not redistributed.",
+  "photos_source": "Original prototype photographs and selected interface captures embedded in aya_rapor.docx (February 2025)."
+}

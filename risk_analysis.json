@@ -1,0 +1,164 @@
+{
+  "scope": "Classification of historical file labels only; not clinical validation.",
+  "audit": {
+    "rows": 2000,
+    "unique_feature_pairs": 294,
+    "rows_beyond_first_per_feature_pair": 1706,
+    "conflicting_feature_pairs": 51,
+    "class_counts": {
+      "0": 1694,
+      "1": 257,
+      "2": 49
+    },
+    "feature_ranges": {
+      "Nabiz": {
+        "min": 40.0,
+        "max": 142.0
+      },
+      "Sicaklik": {
+        "min": 34.0,
+        "max": 39.0
+      }
+    }
+  },
+  "split": {
+    "method": "GroupShuffleSplit by identical pulse-temperature pair",
+    "random_state": 42,
+    "test_fraction_of_groups": 0.2,
+    "train_rows": 1589,
+    "test_rows": 411,
+    "train_groups": 235,
+    "test_groups": 59,
+    "overlapping_groups": 0,
+    "train_class_counts": {
+      "0": 1358,
+      "1": 187,
+      "2": 44
+    },
+    "test_class_counts": {
+      "0": 336,
+      "1": 70,
+      "2": 5
+    }
+  },
+  "models": {
+    "majority_baseline": {
+      "accuracy": 0.8175182481751825,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_matrix_labels": [
+        0,
+        1,
+        2
+      ],
+      "confusion_matrix": [
+        [
+          336,
+          0,
+          0
+        ],
+        [
+          70,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.8175182481751825,
+          "recall": 1.0,
+          "f1-score": 0.8995983935742972,
+          "support": 336.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 70.0
+        },
+        "2": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5.0
+        },
+        "accuracy": 0.8175182481751825,
+        "macro avg": {
+          "precision": 0.2725060827250608,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.2998661311914324,
+          "support": 411.0
+        },
+        "weighted avg": {
+          "precision": 0.6683360860994192,
+          "recall": 0.8175182481751825,
+          "f1-score": 0.7354381027760678,
+          "support": 411.0
+        }
+      }
+    },
+    "random_forest": {
+      "accuracy": 0.9197080291970803,
+      "balanced_accuracy": 0.7416666666666667,
+      "confusion_matrix_labels": [
+        0,
+        1,
+        2
+      ],
+      "confusion_matrix": [
+        [
+          330,
+          6,
+          0
+        ],
+        [
+          25,
+          45,
+          0
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9295774647887324,
+          "recall": 0.9821428571428571,
+          "f1-score": 0.9551374819102749,
+          "support": 336.0
+        },
+        "1": {
+          "precision": 0.8490566037735849,
+          "recall": 0.6428571428571429,
+          "f1-score": 0.7317073170731707,
+          "support": 70.0
+        },
+        "2": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1-score": 0.75,
+          "support": 5.0
+        },
+        "accuracy": 0.9197080291970803,
+        "macro avg": {
+          "precision": 0.9262113561874391,
+          "recall": 0.7416666666666667,
+          "f1-score": 0.8122815996611484,
+          "support": 411.0
+        },
+        "weighted avg": {
+          "precision": 0.9167201713702311,
+          "recall": 0.9197080291970803,
+          "f1-score": 0.91458809274203,
+          "support": 411.0
+        }
+      }
+    }
+  }
+}
